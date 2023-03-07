@@ -35,6 +35,14 @@ The following are the requirements of DSO
 - CPU
 The size of DSO_TPM_v7.m script is about 5KB and the myFitn.m script is about 1KB depending on the objective functions and constraints.
 
+# Design Flow
+After setting the parameters of DSO, the design flow is summarised as follows:
+ - Set the minimum and maximum homeostatic value threshold.
+ - Randomly select an asymptote homeostatic value within the minimum and maximum homeostatic values.
+ - Determine the candidate solution based on the asymptote value and best solution.
+ - Compute candidate solution based on sleep-wake cycle.
+ - Bound candidate solution wrt lower and upper bounds of the decision variables.
+
 # How to use
 
 
