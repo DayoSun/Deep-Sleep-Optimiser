@@ -44,6 +44,10 @@ After setting the parameters of DSO, the design flow is summarised as follows:
  - Bound candidate solution wrt lower and upper bounds of the decision variables.
 
 # How to use
+- Stete the objective function and constraints in myFitn.m scripts
+- Go to the DSO_TPM_v7.m script and change the DSO tuning params if you so desire. The params are at default values.
+- Go to the main.m script and set the number of search agents, max. number of iterations, Monte Carlo runs, dimension of the problem.
+- Run the main script.
 
 
 
