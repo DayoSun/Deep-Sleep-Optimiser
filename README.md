@@ -51,7 +51,7 @@ After setting the parameters of DSO, the design flow is summarised as follows:
 - Run the main script.
 
 
-# Authors and Contributors
+# Authors
 - Sunday O. Oladejo: School for Data Science and Computational Thinking, University of Stellenbosch, Stellenbosch, South Africa (e-mail: sunday@sun.ac.za)
 - Stephen O. Ekwe:  Department of Electrical Engineering, University of Cape Town, Cape Town, South Africa (e-mail: ekwste001@myuct.ac.za)
 - Lateef A. Akinyemi: Department of Electronic and Computer Engineering, Lagos State University, Epe, Nigeria (e-mail: lateef.akinyemi@lasu.edu.ng) 
