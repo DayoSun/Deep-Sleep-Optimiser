@@ -7,6 +7,7 @@ sleep stage is employed in this work. The mathematical model of sleep homeostati
 # Main Paper
 The codes herein are applicable to the manuscript titled: The Deep Sleep Optimiser: A Human-Based Metaheuristic Approach, IEEE ACCESS 2023
 
+
 #  DSO Algorithm
 DSO algorithm is located in the DSO_TPM_v7.m script. It is based on the Two-Process approach. It has 6 inputs, namely: the objective function, Lower Bounds, Upper Bounds, dimension of the decision variables, number of search agents, and the number of run times.
 
@@ -50,4 +51,8 @@ After setting the parameters of DSO, the design flow is summarised as follows:
 - Run the main script.
 
 
-
+# Authors and Contributors
+- Sunday O. Oladejo: School for Data Science and Computational Thinking, University of Stellenbosch, Stellenbosch, South Africa (e-mail: sunday@sun.ac.za)
+- Stephen O. Ekwe:  Department of Electrical Engineering, University of Cape Town, Cape Town, South Africa (e-mail: ekwste001@myuct.ac.za)
+- Lateef A. Akinyemi: Department of Electronic and Computer Engineering, Lagos State University, Epe, Nigeria (e-mail: lateef.akinyemi@lasu.edu.ng) 
+- Seyedali A. Mirjalili: 4Centre for Artificial Intelligence Research and Optimisation, Torrens University Australia, Fortitude Valley, Brisbane, QLD 4006, Australia (e-mail: ali.mirjalili@torrens.edu.au)
