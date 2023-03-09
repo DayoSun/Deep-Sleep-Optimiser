@@ -42,7 +42,7 @@ for h = 1:length(dim)
 
             %----------------------------Meta-Heauristic Algorithms-------------------------------
             % DSO-based Solution - Proposed Algorithm
-            tic; [Best] = DSO_TPM_v7(ObjFun,LB,UB,nVar,nPop,MaxItr);
+            tic; [Best] = DSO_TPM(ObjFun,LB,UB,nVar,nPop,MaxItr);
             DSO_T= toc;
             % sTLBO-based Solution
             tic; [bestfitIter,bestClass_Value,bestClass_Position] = sTLBO(ObjFun,LB,UB,nVar,nPop,MaxItr);
