@@ -116,7 +116,7 @@ UB = ones(1,nVar);       % Variable Bounds 10000000*
 ObjFun = @(x) myFitn(x);
 for i = 1:Episode
     % DSO-based Solution
-    [Best] = DSO_TPM_v7(ObjFun,LB,UB,nVar,nPop,MaxIt);
+    [Best] = DSO_TPM(ObjFun,LB,UB,nVar,nPop,MaxIt);
     %[bestsleep_Iter,bestSleep_Cost,bestSleep_Position] = DSO_TPM_v2(ObjFun,LB,UB,nVar,nPop,MaxIt);
 end
 
