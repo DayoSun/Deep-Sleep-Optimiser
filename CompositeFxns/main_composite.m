@@ -27,7 +27,7 @@ for h = 1:length(dim)
         % Name of the test function that can be from F1 to F23 (Table 1,2,3 in the paper)
         Function_name=char(Function(i));
         % Load details of the selected benchmark function
-        [LB,UB,nVar,fobj,xx,yy,~,xymin]=Get_Modal_Functions1(Function_name,nVar,0);
+        [LB,UB,nVar,fobj,xx,yy,~,xymin]=Get_Modal_Functions(Function_name,nVar,0);
         %[LB,UB,nVar,fobj]=hybrid(Function_name,nVar);
         % Check boundary condition
         if length(LB) == 1
