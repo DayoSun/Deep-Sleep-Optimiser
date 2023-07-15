@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DEEP SLEEP OPTIMIZATION (DSO).                                                           %
 % Authors: Stephen Ekwe and Sunday Oladejo                                                  %
-% Version: v2 - TWO PROCESS MODEL (TPM) APPROACH                                            %
+% Version: TWO PROCESS MODEL (TPM) APPROACH                                            %
 % Last Update: 2021-10-15                                                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [Best] = DSO_TPM_v7(ObjFun,LB,UB,dim,search_agent,run)
@@ -14,16 +14,16 @@ nPop = search_agent;            % no. of search agent
 MaxIt = run;                    % no. of individual runs
 
 %% DSO Tuning Parameters
-H0_minus = 0.17;                % mininum inital homeostatic value of search space
-H0_plus = 0.85;                 % maxinum inital homeostatic value of search space
-a = 0.1;                        % circadian cost per unit fuction
+H0_minus = 0.17;                % minimum initial homeostatic value of search space
+H0_plus = 0.85;                 % maximum initial homeostatic value of search space
+a = 0.1;                        % circadian cost per unit function
 xs = 4.2;                       % sleep power index
 xw = 18.2;                      % wake power index
 T = 24;                         % maximum sleep duration of agent
 
 %% Pre-allocate
 fit = zeros(nPop,1);                    % vector to store fitness value
-Best.iteration = zeros(MaxIt+1,1);      % vetcor to store best fitness value per iteration
+Best.iteration = zeros(MaxIt+1,1);      % vector to store best fitness value per iteration
 
 %% Starting Deep Sleep Optimization
 C = sin((2*pi)/T);                      % set the periodic function
@@ -43,21 +43,21 @@ Best.iteration(1) = min(fit);           % stores the best fitness value of the 0
 for i = 1:MaxIt
     for j = 1:nPop
         % Get initial population for 2D plot
-        if (i==1) && (j==round(nPop*0.1))
-            int_pop.one = Pop;
-        elseif (i==1) && (j==round(nPop*0.5))
-            int_pop.Fone = Pop;
-        elseif (i==2) && (j==round(nPop*0.1))
-            int_pop.two = Pop;
-        elseif (i==3) && (j==round(nPop*0.2))
-            int_pop.three = Pop;
-        elseif (i==4) && (j==round(nPop*0.5))
-            int_pop.four = Pop;
-        elseif (i==5) && (j==round(nPop*0.8))
-            int_pop.five = Pop;
-        elseif (i==MaxIt) && (j==nPop*1)
-            int_pop.last = Pop;
-        end   
+        %if (i==1) && (j==round(nPop*0.1))
+        %    int_pop.one = Pop;
+        %elseif (i==1) && (j==round(nPop*0.5))
+        %    int_pop.Fone = Pop;
+        %elseif (i==2) && (j==round(nPop*0.1))
+        %    int_pop.two = Pop;
+        %elseif (i==3) && (j==round(nPop*0.2))
+        %    int_pop.three = Pop;
+        %elseif (i==4) && (j==round(nPop*0.5))
+        %    int_pop.four = Pop;
+        %elseif (i==5) && (j==round(nPop*0.8))
+        %    int_pop.five = Pop;
+        %elseif (i==MaxIt) && (j==nPop*1)
+        %    int_pop.last = Pop;
+        %end   
         
         Xini = (Pop(j,:));              % obtain initial solution of agent
         [~,ind] = min(fit);             % determine the position of agent with best fitness
