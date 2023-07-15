@@ -12,21 +12,21 @@ The codes herein are applicable to the manuscript titled: The Deep Sleep Optimis
 DSO algorithm is located in the DSO_TPM_v7.m script. It is based on the Two-Process approach. It has 6 inputs, namely: the objective function, Lower Bounds, Upper Bounds, dimension of the decision variables, number of search agents, and the number of run times.
 
 # Inputs
-The major inputs of DSO are the objective function to be optimized and the respective constraints. The objective function and the constraints are stated in the myFitn.m script. In the case of TSP, the objective function are loaded as separate scripts which may contain the cooordinates of the locations/points or a distance matrix.
+The major inputs of DSO are the objective function to be optimized and the respective constraints. The objective function and the constraints are stated in the myFitn.m script. In the case of TSP, the objective function are loaded as separate scripts which may contain the coordinates of the locations/points or a distance matrix.
 
 # Outputs
 The key outputs are the values of the decision variables, convergence curves, cost function, or the path cost and path for TSP. The convergence curves and path are in graphical format. Though the convergence curves may be suppressed as the case may be.
 
 # Parameters
-The parameters herein are categorised into two:  1. Problems params which are the 6 inputs of DSO, and 2. DSO Tuning params.
+The parameters herein are categorized into two:  1. Problems params which are the 6 inputs of DSO, and 2. DSO Tuning params.
 
 DSO Tuning Params are:
-- Minimum inital homeostatic value of search space, H0_minus
-- Maximum inital homeostatic value of search space, H0_plus
-- Circadian cost per unit fuction, a
+- Minimum initial homeostatic value of search space, H0_minus
+- Maximum initial homeostatic value of search space, H0_plus
+- Circadian cost per unit function, a
 - Sleep power index, xs
 - Wake power index, xw
-- Maximum sleep duration of agent, T
+- Maximum sleep duration of an agent, T
 
 # Requirements
 The following are the requirements of DSO
@@ -34,25 +34,25 @@ The following are the requirements of DSO
 - 8GB RAM size
 - 256GB Hard disk size
 - CPU
-The size of DSO_TPM_v7.m script is about 5KB and the myFitn.m script is about 1KB depending on the objective functions and constraints.
+The size of DSO_TPM.m script is about 5KB and the myFitn.m script is about 1KB depending on the objective functions and constraints.
 
 # Design Flow
 After setting the parameters of DSO, the design flow is summarised as follows:
  - Set the minimum and maximum homeostatic value threshold.
  - Randomly select an asymptote homeostatic value within the minimum and maximum homeostatic values.
  - Determine the candidate solution based on the asymptote value and best solution.
- - Compute candidate solution based on sleep-wake cycle.
+ - Compute candidate solution based on the sleep-wake cycle.
  - Bound candidate solution wrt lower and upper bounds of the decision variables.
 
 # How to use
-- Stete the objective function and constraints in myFitn.m scripts
-- Go to the DSO_TPM_v7.m script and change the DSO tuning params if you so desire. The params are at default values.
-- Go to the main.m script and set the number of search agents, max. number of iterations, Monte Carlo runs, dimension of the problem.
+- State the objective function and constraints in myFitn.m scripts
+- Go to the DSO_TPM.m script and change the DSO tuning params if you so desire. The params are at default values.
+- Go to the main.m script and set the number of search agents, max. number of iterations, Monte Carlo runs, and the dimension of the problem.
 - Run the main script.
 
 
 # Authors
 - Sunday O. Oladejo: School for Data Science and Computational Thinking, University of Stellenbosch, Stellenbosch, South Africa (e-mail: sunday@sun.ac.za)
-- Stephen O. Ekwe:  Department of Electrical Engineering, University of Cape Town, Cape Town, South Africa (e-mail: ekwste001@myuct.ac.za)
+- Stephen O. Ekwe:  Department of Electrical Engineering, University of Cape Town, Cape Town, South Africa (e-mail: ekwes@cput.ac.za)
 - Lateef A. Akinyemi: Department of Electronic and Computer Engineering, Lagos State University, Epe, Nigeria (e-mail: lateef.akinyemi@lasu.edu.ng) 
 - Seyedali A. Mirjalili: 4Centre for Artificial Intelligence Research and Optimisation, Torrens University Australia, Fortitude Valley, Brisbane, QLD 4006, Australia (e-mail: ali.mirjalili@torrens.edu.au)
