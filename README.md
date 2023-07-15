@@ -9,7 +9,7 @@ The codes herein are applicable to the manuscript titled: The Deep Sleep Optimis
 
 
 #  DSO Algorithm
-DSO algorithm is located in the DSO_TPM_v7.m script. It is based on the Two-Process approach. It has 6 inputs, namely: the objective function, Lower Bounds, Upper Bounds, dimension of the decision variables, number of search agents, and the number of run times.
+DSO algorithm is located in the DSO_TPM.m script. It is based on the Two-Process approach. It has 6 inputs, namely: the objective function, Lower Bounds, Upper Bounds, dimension of the decision variables, number of search agents, and the number of run times.
 
 # Inputs
 The major inputs of DSO are the objective function to be optimized and the respective constraints. The objective function and the constraints are stated in the myFitn.m script. In the case of TSP, the objective function are loaded as separate scripts which may contain the coordinates of the locations/points or a distance matrix.
