@@ -53,6 +53,6 @@ After setting the parameters of DSO, the design flow is summarised as follows:
 
 # Authors
 - Sunday O. Oladejo: School for Data Science and Computational Thinking, University of Stellenbosch, Stellenbosch, South Africa (e-mail: sunday@sun.ac.za)
-- Stephen O. Ekwe:  Department of Electrical Engineering, University of Cape Town, Cape Town, South Africa (e-mail: ekwes@cput.ac.za)
+- Stephen O. Ekwe:  Department of Electrical, Electronic, and Computer Engineering, Cape Peninsula University of Technology, Cape Town, South Africa (e-mail: ekwes@cput.ac.za)
 - Lateef A. Akinyemi: Department of Electronic and Computer Engineering, Lagos State University, Epe, Nigeria (e-mail: lateef.akinyemi@lasu.edu.ng) 
-- Seyedali A. Mirjalili: 4Centre for Artificial Intelligence Research and Optimisation, Torrens University Australia, Fortitude Valley, Brisbane, QLD 4006, Australia (e-mail: ali.mirjalili@torrens.edu.au)
+- Seyedali A. Mirjalili: Centre for Artificial Intelligence Research and Optimisation, Torrens University Australia, Fortitude Valley, Brisbane, QLD 4006, Australia (e-mail: ali.mirjalili@torrens.edu.au)
